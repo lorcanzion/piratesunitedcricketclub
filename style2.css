@@ -1,0 +1,801 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #222;
+  width: 100vw;
+  margin: auto;
+}
+
+
+header {
+    background-color: #262626;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+img {
+    width: 50px;
+    margin-top: 10px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: rgb(236, 63, 63);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.4), rgba(0,0,0,0.6) ), url(images/309504304_521307203332468_9199151977964197967_n.jpg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  padding: 7rem 2rem;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  border: #1b1b1b solid 1px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background: rgb(255, 101, 101);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: none;
+}
+
+.cta-button:hover {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 2rem;
+  background: rgb(255, 50, 50);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.5s;
+}
+
+.logo2 {
+  display: none;
+}
+
+/*teams section*/
+.teams {
+margin: auto;
+text-align: center;
+height: 100%;
+padding: 25px;
+}
+
+.teams-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.teams h2 {
+  font-size: 35px;
+}
+
+.teams-img {
+  width: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.img-container {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 500px;
+  display: block;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: #cecece3a;
+}
+
+.img-container p {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+.img-container {
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover {
+  transform: scale(1.05);
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  background-color: #cecece3a;
+}
+
+/*history section*/
+.history {
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6), rgba(0,0,0,0.9) ), url(images/onfield.jpg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+}
+
+.history-info {
+  margin-top: 25px;
+  padding: 15px;
+}
+
+.history h2 {
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.history-info p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/*coaching section*/
+.coaching-section {
+  margin: auto;
+  margin-bottom: 65px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.coaching-section h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.coaching-blocks {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+} 
+
+.coaching-info {
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.blocks {
+  width: 320px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #cecece3a;
+}
+
+.blocks p {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.coaching-img {
+  width: 280px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.blocks {
+  transition: transform 0.3s ease;
+}
+
+.blocks:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #cecece3a;
+}
+
+/*membership section*/
+.membership-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9), rgba(0,0,0, 0.5) ), url(images/IMG-20250827-WA0017.jpg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 60vh;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+}
+
+.membership-section h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.membership-info p {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+/*contact section*/
+.contact-section {
+ background-color: rgba(216, 216, 216, 0.233);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+
+.contact-blocks {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.icon-images, .icon-images2, .icon-images3 {
+  width: 85px;
+}
+
+.icon-images2, .icon-images3 {
+  margin-top: 35px;
+}
+
+/*gallery section*/
+.gallery-section {
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: auto;
+}
+
+.gime {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.gime {
+  transition: transform 0.3s ease;
+}
+
+.gime:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #cecece3a;
+}
+
+/*footer section*/
+footer {
+  background: #1b1b1b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.bttb {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30%;
+  text-decoration: none;
+  transition: 0.2s ease ease-out;
+  z-index: 999;
+}
+
+.back-to-top {
+  width: 45px;
+  background-color: #c6282834;
+  border-radius: 30%;
+}
+
+.back-to-top:hover {
+  width: 45px;
+  background-color: #c62828c9;
+  border-radius: 30%;
+  transition: background-color 0.3s;
+
+  transform: translatey(-4px);
+}
+
+
+/*mobile devices styles */
+
+@media (min-width: 100px) and (max-width: 776px) {
+   header {
+    background-color: #000000d7;
+    width: 100%;
+    margin: auto;
+}
+
+
+.logo2 {
+  width: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: rgb(236, 63, 63);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100vw;
+        text-align: left;
+        transition: 0.8s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0rem;
+    }
+
+
+    /* Hero Section */
+     .hero {
+
+        margin: auto;
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.795), rgb(0, 0, 0, 5));
+        padding-top: 3rem;
+        text-align: center;
+        width: 100vw;
+        height: 90vh;
+}
+
+.logo2 {
+  width: 230px;
+}
+
+.cta-button {
+  display: none;
+}
+
+    .hero h1 {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+}
+
+    .hero p {
+        margin-top: 0.1rem;
+        font-size: 1rem;
+}
+
+/*teams section*/
+.teams {
+margin: auto;
+width: 100vw;
+padding-left: 0;
+padding-right: 0;
+margin-left: 0;
+margin-right: 0;
+text-align: center;
+height: 100%;
+}
+
+.teams-blocks {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.teams h2 {
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.teams-img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.img-container {
+  width: 90vw;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 15px;
+  background-color: none;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.img-container p {
+  width: 240px;
+  text-align: center;
+  margin: auto;
+}
+
+/*history section*/
+.history {
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6), rgba(0,0,0,0.9) ), url(images/onfield.jpg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+}
+
+.history-info {
+  margin-top: 25px;
+  padding: 15px;
+}
+
+.history h2 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.history-info p {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+/*coaching section*/
+.coaching-section {
+  margin: auto;
+  margin-bottom: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.coaching-section h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.coaching-blocks {
+  width: 90%;
+  display: grid;
+  display: block;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  height: 500px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+} 
+
+.coaching-info {
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.blocks {
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #cecece3a;
+}
+
+.blocks p {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+}
+
+.coaching-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.blocks {
+  transition: transform 0.3s ease;
+}
+
+.blocks:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #cecece3a;
+}
+
+/*membership section*/
+.membership-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9), rgba(0,0,0, 0.5) ), url(images/IMG-20250827-WA0017.jpg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
+  color: white;
+  width: 100vw;
+  height: 60%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+  padding-left: 0;
+margin-left: 0;
+}
+
+.membership-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.membership-info p {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  font-size: 12px;
+}
+
+/*contact section*/
+.contact-section {
+ background-color: rgba(216, 216, 216, 0.233);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  height: 90vh;
+  margin-bottom: 20px;
+}
+
+.contact-section h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+
+.contact-blocks {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-blocks p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+}
+
+.icon-images, .icon-images2, .icon-images3 {
+  width: 85px;
+}
+
+.icon-images2, .icon-images3 {
+  margin-top: 35px;
+}
+
+/*gallery section*/
+.gallery-section {
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  width: 90vw;
+  height: auto;
+  
+}
+
+.gime {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.gime {
+  transition: transform 0.3s ease;
+}
+
+.gime:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #cecece3a;
+}
+}
